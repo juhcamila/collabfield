@@ -1,0 +1,35 @@
+body {
+  margin-top: 50px;
+}
+
+
+nav {
+  .col-sm-5, .col-sm-7 {
+    padding: 0;
+  }
+  .navbar-header {
+    width: 100%;
+    button, .navbar-brand {
+      transition: opacity 0.15s;
+    }
+    button {
+      margin-right: 0;
+    }
+    button:hover, .navbar-brand:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.navbar-default, .navbar-toggle:focus, .collapsed, button.navbar-toggle {
+  background: $navbarColor !important;
+  border: none;
+  a {
+    color: white !important;
+  }
+}
+
+.navbar-toggle, .navbar-collapse {
+  border-color: $navbarColor !important;
+  box-shadow: none;
+}
